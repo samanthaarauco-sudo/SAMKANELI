@@ -1,0 +1,1422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Identidad Corporativa — SAMKANELI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Fredoka:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Nunito+Sans:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="../identidad-corporativa/identidad-corporativa.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     ICONOS SVG
+========================================================= -->
+
+<svg width="0" height="0" style="position:absolute">
+  <defs>
+
+    <symbol id="icon-home" viewBox="0 0 24 24">
+      <path d="m4 10.5 8-6.5 8 6.5V19a1.8 1.8 0 0 1-1.8 1.8H5.8A1.8 1.8 0 0 1 4 19v-8.5Z"/>
+      <path d="M9.5 20.5v-6h5v6"/>
+    </symbol>
+
+    <symbol id="icon-eye" viewBox="0 0 24 24">
+      <path d="M2.5 12S6 5.8 12 5.8 21.5 12 21.5 12 18 18.2 12 18.2 2.5 12 2.5 12Z"/>
+      <circle cx="12" cy="12" r="2.8"/>
+    </symbol>
+
+    <symbol id="icon-box" viewBox="0 0 24 24">
+      <path d="M3.5 8 12 3.5 20.5 8v8L12 20.5 3.5 16V8Z"/>
+      <path d="M3.5 8 12 12.5 20.5 8M12 12.5v8"/>
+    </symbol>
+
+    <symbol id="icon-heart" viewBox="0 0 24 24">
+      <path d="M12 20.5s-7.5-4.7-9-9.3C1.9 7.6 4.2 4.5 7.4 4.5c2 0 3.6 1.1 4.6 2.7 1-1.6 2.6-2.7 4.6-2.7 3.2 0 5.5 3.1 4.4 6.7-1.5 4.6-9 9.3-9 9.3Z"/>
+    </symbol>
+
+    <symbol id="icon-leaf" viewBox="0 0 24 24">
+      <path d="M12 21C7.5 16.5 5.5 10.5 12 3.5c6.5 7 4.5 13 0 17.5Z"/>
+      <path d="M12 21V9.5"/>
+    </symbol>
+
+    <symbol id="icon-chat" viewBox="0 0 24 24">
+      <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H9l-4.2 3.6c-.5.4-.8 0-.8-.4V6.5Z"/>
+    </symbol>
+
+    <symbol id="icon-palette" viewBox="0 0 24 24">
+      <path d="M12 3a9 9 0 0 0 0 18c1.3 0 2-.8 2-1.8 0-.9-.6-1.4-.6-2.2 0-1 .8-1.8 2-1.8h2A3.6 3.6 0 0 0 21 11.6C21 6.8 16.9 3 12 3Z"/>
+      <circle cx="7.6" cy="10.2" r="1"/>
+      <circle cx="12" cy="7.6" r="1"/>
+      <circle cx="16.4" cy="10.2" r="1"/>
+      <circle cx="7.8" cy="15" r="1"/>
+    </symbol>
+
+    <symbol id="icon-hand" viewBox="0 0 24 24">
+      <path d="M7 11V6.5a1.5 1.5 0 0 1 3 0V11"/>
+      <path d="M10 10V5a1.5 1.5 0 0 1 3 0v6"/>
+      <path d="M13 10V6.5a1.5 1.5 0 0 1 3 0v6"/>
+      <path d="M16 11V8.5a1.5 1.5 0 0 1 3 0v6c0 4-2.5 6.5-6.5 6.5h-1c-2.4 0-4.2-1.2-5.3-3.3L4 13.8a1.6 1.6 0 0 1 2.8-1.5L9 15"/>
+    </symbol>
+
+    <symbol id="icon-roll" viewBox="0 0 24 24">
+      <path d="M12 21a9 9 0 1 1 9-9"/>
+      <path d="M12 17.5a5.5 5.5 0 1 1 5.5-5.5"/>
+      <path d="M12 14a2 2 0 1 1 2-2"/>
+    </symbol>
+
+    <symbol id="icon-sparkle" viewBox="0 0 24 24">
+      <path d="M12 3l1.9 5.6L19.5 10l-5.6 1.9L12 17.5l-1.9-5.6L4.5 10l5.6-1.4L12 3Z"/>
+    </symbol>
+
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M12 21s7-6.1 7-11a7 7 0 1 0-14 0c0 4.9 7 11 7 11Z"/>
+      <circle cx="12" cy="10" r="2.6"/>
+    </symbol>
+
+    <symbol id="icon-instagram" viewBox="0 0 24 24">
+      <rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.2" cy="6.8" r="1.1"/>
+    </symbol>
+
+    <symbol id="icon-facebook" viewBox="0 0 24 24">
+      <path d="M13.5 21v-7h2.6l.5-3.2h-3.1V8.7c0-.9.4-1.5 1.6-1.5h1.7V4.3c-.7-.1-1.6-.2-2.5-.2-2.6 0-4.3 1.5-4.3 4.3v2.4H7.5V14h2.5v7h3.5Z"/>
+    </symbol>
+
+    <symbol id="icon-tiktok" viewBox="0 0 24 24">
+      <path d="M14.5 4v10.7a3.8 3.8 0 1 1-3.3-3.8"/>
+      <path d="M14.5 5.5c.6 2.3 2.3 3.7 4.8 3.9"/>
+    </symbol>
+
+    <symbol id="icon-whatsapp" viewBox="0 0 24 24">
+      <path d="M12 3.5a8.5 8.5 0 0 0-7.3 12.8L3.5 20.5l4.3-1.1A8.5 8.5 0 1 0 12 3.5Z"/>
+      <path d="M9 8.8c0 4 2.2 6.2 6.2 6.2.5 0 .9-.4 1-1l.1-.8-2.2-1.1-1 .9a5 5 0 0 1-2.1-2.1l.9-1-1.1-2.2-.8.1c-.6.1-1 .5-1 1Z"/>
+    </symbol>
+
+    <symbol id="icon-arrow-left" viewBox="0 0 24 24">
+      <path d="M20 12H4m6-6-6 6 6 6"/>
+    </symbol>
+
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <path d="M4 12h16m-6-6 6 6-6 6"/>
+    </symbol>
+
+    <symbol id="icon-chevron" viewBox="0 0 24 24">
+      <path d="m6 9 6 6 6-6"/>
+    </symbol>
+
+    <symbol id="icon-menu" viewBox="0 0 24 24">
+      <path d="M4 7h16M4 12h16M4 17h16"/>
+    </symbol>
+
+    <symbol id="icon-x" viewBox="0 0 24 24">
+      <path d="m6 6 12 12M18 6 6 18"/>
+    </symbol>
+
+  </defs>
+</svg>
+
+
+<!-- =========================================================
+     MENÚ SUPERIOR
+========================================================= -->
+
+<header class="top-header">
+
+  <div class="brand-bar">
+
+    <a href="../index.html" class="brand-logo">
+      <img src="assets/mascot.png" alt="SAMKANELI">
+      <span>SAMKANELI</span>
+    </a>
+
+    <div class="desktop-info">
+
+      <span class="location-pill">
+        <svg>
+          <use href="#icon-pin"></use>
+        </svg>
+
+        Pangoa · Satipo · Junín, Perú
+      </span>
+
+      <div class="social-mini">
+
+        <a href="#" aria-label="Facebook">
+          <svg>
+            <use href="#icon-facebook"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="Instagram">
+          <svg>
+            <use href="#icon-instagram"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="TikTok">
+          <svg>
+            <use href="#icon-tiktok"></use>
+          </svg>
+        </a>
+
+        <a href="#" aria-label="WhatsApp">
+          <svg>
+            <use href="#icon-whatsapp"></use>
+          </svg>
+        </a>
+
+      </div>
+
+    </div>
+
+    <button
+      class="mobile-menu-btn"
+      id="mobileMenuBtn"
+      aria-label="Abrir menú">
+
+      <svg id="mobileMenuIcon">
+        <use href="#icon-menu"></use>
+      </svg>
+
+    </button>
+
+  </div>
+
+
+  <nav class="main-menu" id="mainMenu">
+
+
+    <!-- =========================
+         INICIO
+    ========================== -->
+
+    <a href="../index.html">
+      INICIO
+    </a>
+
+
+    <!-- =========================
+         EMPRESA
+    ========================== -->
+
+    <div class="menu-dropdown">
+
+      <a href="../empresa/empresa.html">
+
+        EMPRESA
+
+        <svg>
+          <use href="#icon-chevron"></use>
+        </svg>
+
+      </a>
+
+      <div class="dropdown">
+
+        <a href="../empresa/empresa.html#datos">
+          Datos de la empresa
+        </a>
+
+        <a href="../empresa/empresa.html#descripcion">
+          Descripción de la empresa
+        </a>
+
+        <a href="../empresa/empresa.html#mision">
+          Misión
+        </a>
+
+        <a href="../empresa/empresa.html#vision">
+          Visión
+        </a>
+
+        <a href="../empresa/empresa.html#valores">
+          Valores corporativos
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         PÚBLICO OBJETIVO
+    ========================== -->
+
+    <div class="menu-dropdown">
+
+      <a href="../publico-objetivo/publico-objetivo.html">
+
+        PÚBLICO OBJETIVO
+
+        <svg>
+          <use href="#icon-chevron"></use>
+        </svg>
+
+      </a>
+
+      <div class="dropdown">
+
+        <a href="../publico-objetivo/publico-objetivo.html#segmento">
+          Segmento objetivo
+        </a>
+
+        <a href="../publico-objetivo/publico-objetivo.html#edad">
+          Edad
+        </a>
+
+        <a href="../publico-objetivo/publico-objetivo.html#ubicacion">
+          Ubicación
+        </a>
+
+        <a href="../publico-objetivo/publico-objetivo.html#necesidades">
+          Necesidades
+        </a>
+
+        <a href="../publico-objetivo/publico-objetivo.html#caracteristicas">
+          Características
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         IDENTIDAD CORPORATIVA
+         ACTIVA
+    ========================== -->
+
+    <div class="menu-dropdown active">
+
+      <a href="../identidad-corporativa/identidad-corporativa.html">
+
+        IDENTIDAD CORPORATIVA
+
+        <svg>
+          <use href="#icon-chevron"></use>
+        </svg>
+
+      </a>
+
+      <div class="dropdown">
+
+        <a href="../identidad-corporativa/identidad-corporativa.html#imagen">
+          ¿Qué es la imagen corporativa?
+        </a>
+
+        <a href="../identidad-corporativa/identidad-corporativa.html#elementos">
+          Elementos de identidad
+        </a>
+
+        <a href="../identidad-corporativa/identidad-corporativa.html#tipos">
+          Tipos de identidad
+        </a>
+
+        <a href="../identidad-corporativa/identidad-corporativa.html#cultural">
+          Identidad cultural
+        </a>
+
+        <a href="../identidad-corporativa/identidad-corporativa.html#verbal">
+          Identidad verbal
+        </a>
+
+        <a href="../identidad-corporativa/identidad-corporativa.html#corporativa">
+          Identidad corporativa
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         IDENTIDAD VISUAL
+    ========================== -->
+
+    <div class="menu-dropdown">
+
+      <a href="../identidad-visual/identidad-visual.html">
+
+        IDENTIDAD VISUAL
+
+        <svg>
+          <use href="#icon-chevron"></use>
+        </svg>
+
+      </a>
+
+      <div class="dropdown">
+
+        <a href="../identidad-visual/identidad-visual.html#logotipo">
+          Logotipo
+        </a>
+
+        <a href="../identidad-visual/identidad-visual.html#colores">
+          Colores corporativos
+        </a>
+
+        <a href="../identidad-visual/identidad-visual.html#tipografia">
+          Tipografía
+        </a>
+
+        <a href="../identidad-visual/identidad-visual.html#elementos">
+          Elementos gráficos
+        </a>
+
+        <a href="../identidad-visual/identidad-visual.html#uniformes">
+          Uniformes
+        </a>
+
+        <a href="../identidad-visual/identidad-visual.html#empaques">
+          Empaques
+        </a>
+
+        <a href="../identidad-visual/identidad-visual.html#letreros">
+          Letreros
+        </a>
+
+        <a href="../identidad-visual/identidad-visual.html#decoracion">
+          Decoración
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         IMAGEN INSTITUCIONAL
+    ========================== -->
+
+    <div class="menu-dropdown">
+
+      <a href="../imagen-institucional/imagen-institucional.html">
+
+        IMAGEN INSTITUCIONAL
+
+        <svg>
+          <use href="#icon-chevron"></use>
+        </svg>
+
+      </a>
+
+      <div class="dropdown">
+
+        <a href="../imagen-institucional/imagen-institucional.html#percepcion">
+          Percepción del cliente
+        </a>
+
+        <a href="../imagen-institucional/imagen-institucional.html#fortalezas">
+          Fortalezas
+        </a>
+
+        <a href="../imagen-institucional/imagen-institucional.html#mejorar">
+          Aspectos por mejorar
+        </a>
+
+        <a href="../imagen-institucional/imagen-institucional.html#dimensiones">
+          Dimensiones de la imagen
+        </a>
+
+        <a href="../imagen-institucional/imagen-institucional.html#componentes">
+          Componentes de la imagen
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         APLICACIONES
+    ========================== -->
+
+    <div class="menu-dropdown">
+
+      <a href="../aplicaciones/aplicaciones.html">
+
+        APLICACIONES
+
+        <svg>
+          <use href="#icon-chevron"></use>
+        </svg>
+
+      </a>
+
+      <div class="dropdown">
+
+        <a href="../aplicaciones/aplicaciones.html#tarjetas">
+          Tarjetas
+        </a>
+
+        <a href="../aplicaciones/aplicaciones.html#vasos">
+          Vasos y empaques
+        </a>
+
+        <a href="../aplicaciones/aplicaciones.html#uniformes">
+          Uniformes
+        </a>
+
+        <a href="../aplicaciones/aplicaciones.html#afiches">
+          Afiches
+        </a>
+
+        <a href="../aplicaciones/aplicaciones.html#redes">
+          Redes sociales
+        </a>
+
+        <a href="../aplicaciones/aplicaciones.htmls#web">
+          Web
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         COMUNICACIÓN
+    ========================== -->
+
+    <div class="menu-dropdown">
+
+      <a href="../comunicacion/comunicacion.html">
+
+        COMUNICACIÓN
+
+        <svg>
+          <use href="#icon-chevron"></use>
+        </svg>
+
+      </a>
+
+      <div class="dropdown">
+
+        <a href="../comunicacion/comunicacion.html#lenguaje">
+          Lenguaje
+        </a>
+
+        <a href="../comunicacion/comunicacion.html#canales">
+          Canales
+        </a>
+
+        <a href="../comunicacion/comunicacion.html#mensaje">
+          Mensaje
+        </a>
+
+        <a href="../comunicacion/comunicacion.html#eslogan">
+          Eslogan
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         MANUAL DE IDENTIDAD
+    ========================== -->
+
+    <div class="menu-dropdown">
+
+      <a href="../manual-identidad/manual-identidad.html">
+
+        MANUAL DE IDENTIDAD
+
+        <svg>
+          <use href="#icon-chevron"></use>
+        </svg>
+
+      </a>
+
+      <div class="dropdown">
+
+        <a href="manual-identidad.html#identidad-visual">
+          Identidad visual
+        </a>
+
+        <a href="manual-identidad.html#identidad-verbal">
+          Identidad verbal
+        </a>
+
+        <a href="../manual-identidad/manual-identidad.html#colores">
+          Colores
+        </a>
+
+        <a href="../manual-identidad/manual-identidad.html#tipografia">
+          Tipografía
+        </a>
+
+        <a href="../manual-identidad/manual-identidad.html#logotipo">
+          Logotipo
+        </a>
+
+        <a href="../manual-identidad/manual-identidad.html#aplicaciones">
+          Aplicaciones
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         PROPUESTAS
+    ========================== -->
+
+    <div class="menu-dropdown">
+
+      <a href="../propuestas/propuestas.html">
+
+        PROPUESTAS
+
+        <svg>
+          <use href="#icon-chevron"></use>
+        </svg>
+
+      </a>
+
+      <div class="dropdown">
+
+        <a href="../propuestas/propuestas.html#estandarizacion">
+          Estandarización de la marca
+        </a>
+
+        <a href="../propuestas/propuestas.html#publicidad">
+          Material publicitario
+        </a>
+
+        <a href="../propuestas/propuestas.html#colores">
+          Colores y tipografías
+        </a>
+
+        <a href="../propuestas/propuestas.html#redes">
+          Redes sociales
+        </a>
+
+      </div>
+
+    </div>
+
+
+  </nav>
+
+</header>
+
+
+<!-- =========================================================
+     CABECERA
+========================================================= -->
+
+<section class="page-hero">
+
+  <div class="hero-dots"></div>
+  <div class="hero-blob"></div>
+
+  <div class="hero-leaf"></div>
+
+  <div class="hero-container">
+
+    <div class="breadcrumb">
+      <a href="../index.html">
+        <svg><use href="#icon-home"></use></svg>
+        INICIO
+      </a>
+
+      <span>/</span>
+
+      <span>IDENTIDAD CORPORATIVA</span>
+
+      <span>/</span>
+
+      <strong id="breadcrumbCurrent">
+        ¿QUÉ ES LA IMAGEN CORPORATIVA?
+      </strong>
+    </div>
+
+
+    <div class="hero-flex">
+
+      <div>
+
+        <span class="section-badge">
+          <i></i>
+          SECCIÓN 04 / 10
+        </span>
+
+        <h1>IDENTIDAD CORPORATIVA</h1>
+
+        <p>
+          Lo que somos más allá del logotipo.
+        </p>
+
+      </div>
+
+
+      <img
+        src="assets/mascot.png"
+        alt="Mascota de SAMKANELI"
+        class="hero-mascot"
+      >
+
+    </div>
+
+  </div>
+
+
+  <svg class="hero-wave" viewBox="0 0 1440 44" preserveAspectRatio="none">
+    <path
+      d="M0 44h1440V18c-120 14-260 20-420 12C820 20 640 2 470 8 300 14 140 32 0 26v18Z"
+      fill="#fff9f1">
+    </path>
+  </svg>
+
+</section>
+
+
+<!-- =========================================================
+     CONTENIDO
+========================================================= -->
+
+<main class="content">
+
+  <div class="content-container">
+
+    <!-- TABS -->
+
+    <!-- TABS -->
+
+<div class="tabs" role="tablist">
+
+    <button class="tab active" data-tab="que-es">
+        <span>01</span>
+        ¿Qué es la imagen corporativa?
+    </button>
+
+    <button class="tab" data-tab="elementos">
+        <span>02</span>
+        Elementos de identidad
+    </button>
+
+    <button class="tab" data-tab="tipos">
+        <span>03</span>
+        Tipos de identidad
+    </button>
+
+    <button class="tab" data-tab="cultural">
+        <span>04</span>
+        Identidad cultural
+    </button>
+
+    <button class="tab" data-tab="verbal">
+        <span>05</span>
+        Identidad verbal
+    </button>
+
+    <button class="tab" data-tab="corporativa">
+        <span>06</span>
+        Identidad corporativa
+    </button>
+
+</div>
+
+
+    <!-- =====================================================
+         TAB 01
+    ====================================================== -->
+
+    <section class="tab-content active" id="que-es">
+
+    <span
+        id="imagen"
+        class="section-anchor"
+        aria-hidden="true">
+    </span>
+
+    <div class="corporate-intro">
+
+        <div class="intro-text">
+
+          <p class="large-text">
+            La imagen corporativa es
+            <strong>la percepción que las personas construyen sobre una organización</strong>
+            a partir de todo lo que comunica: cómo se ve, cómo habla,
+            cómo actúa y qué representa.
+          </p>
+
+          <p>
+            No es solo el logotipo: es la suma de la identidad visual,
+            verbal y cultural que, juntas, hacen que el cliente
+            <strong>sienta</strong> a la marca.
+          </p>
+
+
+          <div class="pink-quote">
+            <p>
+              “En SAMKANELI, la imagen corporativa es dulce por dentro
+              y por fuera: cercanía, alegría, cultura regional y el aroma
+              de un rollo recién hecho.”
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="perception-grid">
+
+          <article class="info-card reveal">
+            <span class="round-icon">
+              <svg><use href="#icon-eye"></use></svg>
+            </span>
+            <h3>Se percibe</h3>
+            <p>Es lo que el cliente siente y recuerda.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <span class="round-icon">
+              <svg><use href="#icon-box"></use></svg>
+            </span>
+            <h3>Se construye</h3>
+            <p>Con coherencia en cada punto de contacto.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <span class="round-icon">
+              <svg><use href="#icon-heart"></use></svg>
+            </span>
+            <h3>Se siente</h3>
+            <p>Dulzura, cercanía y calidez.</p>
+          </article>
+
+          <article class="info-card reveal">
+            <span class="round-icon">
+              <svg><use href="#icon-leaf"></use></svg>
+            </span>
+            <h3>Se comparte</h3>
+            <p>Cada cliente la lleva en su recuerdo.</p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TAB 02
+    ====================================================== -->
+
+    <section class="tab-content" id="elementos">
+
+      <p class="section-description">
+        La identidad de SAMKANELI se apoya en cuatro elementos
+        que trabajan en equipo:
+      </p>
+
+      <div class="element-grid">
+
+        <article class="element-card reveal">
+          <div class="element-header">
+            <span class="element-icon">
+              <svg><use href="#icon-palette"></use></svg>
+            </span>
+
+            <div>
+              <small>ELEMENTO 1</small>
+              <h3>Identidad visual</h3>
+            </div>
+          </div>
+
+          <p>
+            Imagotipo con la mascota de rollo de canela,
+            paleta rosa-crema-verde-canela y tipografía redondeada.
+          </p>
+        </article>
+
+
+        <article class="element-card reveal">
+          <div class="element-header">
+            <span class="element-icon">
+              <svg><use href="#icon-chat"></use></svg>
+            </span>
+
+            <div>
+              <small>ELEMENTO 2</small>
+              <h3>Identidad verbal</h3>
+            </div>
+          </div>
+
+          <p>
+            Lenguaje cercano, amigable y sencillo, con el eslogan
+            “el sabor que endulza nuestra selva”.
+          </p>
+        </article>
+
+
+        <article class="element-card reveal">
+          <div class="element-header">
+            <span class="element-icon">
+              <svg><use href="#icon-leaf"></use></svg>
+            </span>
+
+            <div>
+              <small>ELEMENTO 3</small>
+              <h3>Identidad cultural</h3>
+            </div>
+          </div>
+
+          <p>
+            Frutas de la Selva Central, tradición artesanal
+            y orgullo de Pangoa – Satipo.
+          </p>
+        </article>
+
+
+        <article class="element-card reveal">
+          <div class="element-header">
+            <span class="element-icon">
+              <svg><use href="#icon-hand"></use></svg>
+            </span>
+
+            <div>
+              <small>ELEMENTO 4</small>
+              <h3>Identidad de comportamiento</h3>
+            </div>
+          </div>
+
+          <p>
+            Atención amable y cercana, trato directo con el cliente.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TAB 03
+    ====================================================== -->
+
+    <section class="tab-content" id="tipos">
+
+      <p class="section-description">
+        Existen tres grandes tipos de identidad, y SAMKANELI
+        los lleva puestos:
+      </p>
+
+      <div class="types-grid">
+
+        <article class="type-card reveal">
+          <span class="type-number">01</span>
+
+          <span class="type-icon">
+            <svg><use href="#icon-palette"></use></svg>
+          </span>
+
+          <h3>Identidad visual</h3>
+
+          <p>
+            Lo que se ve: logotipo, mascota, colores, tipografía
+            y aplicaciones. La cara de la marca.
+          </p>
+        </article>
+
+
+        <article class="type-card reveal">
+          <span class="type-number">02</span>
+
+          <span class="type-icon">
+            <svg><use href="#icon-chat"></use></svg>
+          </span>
+
+          <h3>Identidad verbal</h3>
+
+          <p>
+            Lo que se dice: nombre, eslogan, mensaje principal
+            y el tono dulce y cercano de la comunicación.
+          </p>
+        </article>
+
+
+        <article class="type-card reveal">
+          <span class="type-number">03</span>
+
+          <span class="type-icon">
+            <svg><use href="#icon-leaf"></use></svg>
+          </span>
+
+          <h3>Identidad cultural</h3>
+
+          <p>
+            Lo que se siente: tradición, origen en la Selva Central
+            y la cultura artesanal del postre.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TAB 04
+    ====================================================== -->
+
+    <section class="tab-content" id="cultural">
+
+      <div class="cultural-grid">
+
+        <div class="cultural-text">
+
+          <p class="section-description">
+            La identidad cultural de SAMKANELI nace en
+            <strong>Pangoa, Satipo, Junín</strong>: la Selva Central
+            nos da sus frutas, su clima cálido y su gente amable.
+          </p>
+
+          <p>
+            Cada rollo es un pedazo de esa cultura: canela artesanal
+            combinada con mango, piña, coco y chocolate, servida con
+            la cercanía de nuestra gente.
+          </p>
+
+
+          <div class="fruit-tags">
+
+            <span>
+              <svg><use href="#icon-roll"></use></svg>
+              Mango
+            </span>
+
+            <span>
+              <svg><use href="#icon-roll"></use></svg>
+              Piña
+            </span>
+
+            <span>
+              <svg><use href="#icon-roll"></use></svg>
+              Coco
+            </span>
+
+            <span>
+              <svg><use href="#icon-roll"></use></svg>
+              Chocolate
+            </span>
+
+            <span>
+              <svg><use href="#icon-roll"></use></svg>
+              Canela
+            </span>
+
+            <span>
+              <svg><use href="#icon-roll"></use></svg>
+              Pangoa
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div class="fruit-image-wrap">
+
+          <div class="fruit-image-bg"></div>
+
+          <img
+            src="assets/frutas-selva.jpg"
+            alt="Frutas de la Selva Central"
+          >
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TAB 05
+    ====================================================== -->
+
+    <section class="tab-content" id="verbal">
+
+      <p class="section-description">
+        SAMKANELI habla con un lenguaje
+        <strong>cercano, amigable y sencillo</strong>,
+        buscando conectar con los clientes y transmitir su dulzura
+        y alegría.
+      </p>
+
+
+      <div class="verbal-grid">
+
+        <div class="voice-card">
+
+          <small>EJEMPLOS DE VOZ</small>
+
+          <ul>
+
+            <li>
+              <svg><use href="#icon-chat"></use></svg>
+              “¿Qué te endulzamos hoy?”
+            </li>
+
+            <li>
+              <svg><use href="#icon-chat"></use></svg>
+              “Recién salidos, con canela y frutas de nuestra selva.”
+            </li>
+
+            <li>
+              <svg><use href="#icon-chat"></use></svg>
+              “Un rollo para compartir… ¡o dos!”
+            </li>
+
+          </ul>
+
+        </div>
+
+
+        <div class="slogan-card">
+
+          <svg><use href="#icon-chat"></use></svg>
+
+          <p>
+            SAMKANELI, el sabor que endulza nuestra selva.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         TAB 06
+    ====================================================== -->
+
+    <section class="tab-content" id="corporativa">
+
+      <p class="section-description">
+        Todo converge en una identidad corporativa propia.
+        Estos son los rasgos que hacen que SAMKANELI se sienta única:
+      </p>
+
+
+      <div class="highlight-grid">
+
+        <article class="highlight-card reveal">
+          <span>
+            <svg><use href="#icon-hand"></use></svg>
+          </span>
+          <h3>Cercanía</h3>
+          <p>
+            Trato directo y amable, como en casa de la familia.
+          </p>
+        </article>
+
+
+        <article class="highlight-card reveal">
+          <span>
+            <svg><use href="#icon-roll"></use></svg>
+          </span>
+          <h3>Dulzura</h3>
+          <p>
+            El sabor y la estética endulzan cada punto de contacto.
+          </p>
+        </article>
+
+
+        <article class="highlight-card reveal">
+          <span>
+            <svg><use href="#icon-sparkle"></use></svg>
+          </span>
+          <h3>Alegría</h3>
+          <p>
+            Colores vivos y una mascota que saluda con la mano.
+          </p>
+        </article>
+
+
+        <article class="highlight-card reveal">
+          <span>
+            <svg><use href="#icon-leaf"></use></svg>
+          </span>
+          <h3>Cultura regional</h3>
+          <p>
+            Sabores y orgullo de la Selva Central en cada detalle.
+          </p>
+        </article>
+
+
+        <article class="highlight-card reveal">
+          <span>
+            <svg><use href="#icon-chat"></use></svg>
+          </span>
+          <h3>Atención amigable</h3>
+          <p>
+            Lenguaje sencillo y cercano con cada cliente.
+          </p>
+        </article>
+
+
+        <article class="highlight-card reveal">
+          <span>
+            <svg><use href="#icon-hand"></use></svg>
+          </span>
+          <h3>Identidad artesanal</h3>
+          <p>
+            Producto hecho a mano, sin atajos, con oficio.
+          </p>
+        </article>
+
+      </div>
+
+
+      <div class="personality-box">
+
+        <p>
+          Dulce, amigable, cercana, moderna, agradable,
+          innovadora, artesanal y acogedora.
+        </p>
+
+        <span>PERSONALIDAD DE MARCA</span>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         NAVEGACIÓN
+    ====================================================== -->
+
+    <nav class="page-navigation">
+
+      <a href="../publico-objetivo/publico-objetivo.html" class="page-nav-side">
+
+        <span class="nav-arrow">
+          <svg><use href="#icon-arrow-left"></use></svg>
+        </span>
+
+        <span>
+          <small>ANTERIOR</small>
+          <strong>PÚBLICO OBJETIVO</strong>
+        </span>
+
+      </a>
+
+
+      <a href="../index.html" class="home-button">
+
+        <svg><use href="#icon-sparkle"></use></svg>
+
+        VOLVER AL INICIO
+
+      </a>
+
+
+      <a href="../identidad-visual/identidad-visual.html" class="page-nav-side next">
+
+        <span>
+          <small>SIGUIENTE</small>
+          <strong>IDENTIDAD VISUAL</strong>
+        </span>
+
+        <span class="nav-arrow green">
+          <svg><use href="#icon-arrow-right"></use></svg>
+        </span>
+
+      </a>
+
+    </nav>
+
+  </div>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <div class="footer-brand">
+
+      <div class="footer-logo">
+        <img src="assets/mascot.png" alt="SAMKANELI">
+        <strong>SAMKANELI</strong>
+      </div>
+
+      <p class="footer-script">
+        El sabor que endulza nuestra selva.
+      </p>
+
+      <p class="footer-location">
+        <svg><use href="#icon-pin"></use></svg>
+        Pangoa – Satipo – Junín, Perú
+      </p>
+
+      <div class="footer-social">
+
+        <a href="#">
+          <svg><use href="#icon-facebook"></use></svg>
+        </a>
+
+        <a href="#">
+          <svg><use href="#icon-instagram"></use></svg>
+        </a>
+
+        <a href="#">
+          <svg><use href="#icon-tiktok"></use></svg>
+        </a>
+
+        <a href="#">
+          <svg><use href="#icon-whatsapp"></use></svg>
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-links">
+
+      <h3>Explora el manual</h3>
+
+      <div class="footer-columns">
+
+        <div>
+          <a href="../index.html">• Inicio</a>
+          <a href="../publico-objetivo/publico-objetivo.html">• Público objetivo</a>
+          <a href="../identidad-visual/identidad-visual.html">• Identidad visual</a>
+          <a href="../aplicaciones/aplicaciones.html">• Aplicaciones</a>
+          <a href="../manual-identidad/manual-identidad.html">• Manual de identidad</a>
+        </div>
+
+        <div>
+          <a href="../empresa/empresa.html">• Empresa</a>
+          <a href="../identidad-corporativa/identidad-corporativa.html">• Identidad corporativa</a>
+          <a href="../imagen-institucional/imagen-institucional.html">• Imagen institucional</a>
+          <a href="../comunicacion/comunicacion.html">• Comunicación</a>
+          <a href="../propuestas/propuestas.html">• Propuestas</a>
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-about">
+
+      <h3>La marca</h3>
+
+      <p>
+        Rollos de canela artesanales combinados con los sabores
+        de las frutas de la Selva Central: mango, piña, coco,
+        chocolate y más.
+      </p>
+
+      <div class="footer-tags">
+        <span>Calidad</span>
+        <span>Responsabilidad</span>
+        <span>Respeto</span>
+        <span>Compromiso</span>
+        <span>Innovación</span>
+      </div>
+
+      <em>
+        Un dulce sabor de nuestra selva en cada rollo.
+      </em>
+
+    </div>
+
+  </div>
+
+
+  <div class="footer-bottom">
+
+    <span>
+      © SAMKANELI S.A.C. · Marca de rollos de canela artesanales
+    </span>
+
+    <span>
+      Hecho con ♡ en la Selva Central
+    </span>
+
+  </div>
+
+</footer>
+
+
+<!-- BOTÓN ARRIBA -->
+
+<button id="backTop" class="back-top" aria-label="Volver arriba">
+  ↑
+</button>
+
+
+<script src="../identidad-corporativa/identidad-corporativa.js"></script>
+<script>
+(function () {
+
+    const hashToTab = {
+        "#imagen": "que-es",
+        "#elementos": "elementos",
+        "#tipos": "tipos",
+        "#cultural": "cultural",
+        "#verbal": "verbal",
+        "#corporativa": "corporativa"
+    };
+
+    function activateFromHash() {
+
+        const target = hashToTab[window.location.hash];
+
+        if (!target) return;
+
+        const button =
+            document.querySelector('.tab[data-tab="' + target + '"]');
+
+        const section =
+            document.getElementById(target);
+
+        if (!button || !section) return;
+
+        document.querySelectorAll(".tab").forEach(function(tab) {
+            tab.classList.remove("active");
+        });
+
+        document.querySelectorAll(".tab-content").forEach(function(content) {
+            content.classList.remove("active");
+        });
+
+        button.classList.add("active");
+        section.classList.add("active");
+    }
+
+    window.addEventListener("hashchange", activateFromHash);
+    window.addEventListener("DOMContentLoaded", activateFromHash);
+
+})();
+</script>
+
+</body>
+</html>
